@@ -6279,5 +6279,8 @@ uniform sampler2D detailMap;`).replace(`#include <map_fragment>`,`#include <map_
   </head>
   <body>
     <div id="root"></div>
-  </body>
+  <a id="fs-dash" href="dashboard/?lang=en" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>Dashboard</span></a>
+<style>#fs-dash{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:2147483000;display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;background:#006D44;color:#fff;font:600 15px/1 "IBM Plex Sans","Readex Pro",system-ui,sans-serif;text-decoration:none;box-shadow:0 6px 20px rgba(6,47,55,.28)}#fs-dash:hover{background:#00804f}#fs-dash:focus-visible{outline:3px solid #6CC6DC;outline-offset:2px}html[lang="ar"] #fs-dash{font-family:"Readex Pro","IBM Plex Sans",system-ui,sans-serif}@media (max-width:700px){#fs-dash{top:calc(74px + env(safe-area-inset-top,0px));font-size:13px;padding:9px 15px}}@media print{#fs-dash{display:none}}</style>
+<script>(function(){var a=document.getElementById("fs-dash"),s=a.querySelector("span");function u(){var ar=(document.documentElement.lang||"").indexOf("ar")===0;s.textContent=ar?"لوحة التحكم":"Dashboard";a.href="dashboard/?lang="+(ar?"ar":"en")}u();new MutationObserver(u).observe(document.documentElement,{attributes:true,attributeFilter:["lang","dir"]})})();</script>
+</body>
 </html>
